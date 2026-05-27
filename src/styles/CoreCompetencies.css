@@ -1,0 +1,78 @@
+.core-competencies {
+  background: linear-gradient(135deg, #0f1629 0%, #0a0e27 100%);
+  padding: 6rem 2rem;
+  text-align: center;
+}
+
+.core-competencies h2 {
+  font-size: 3rem;
+  color: #ffffff;
+  margin: 0 0 4rem 0;
+  font-weight: 700;
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+.core-competencies h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, #a855f7 0%, #7c3aed 100%);
+  border-radius: 2px;
+}
+
+.competencies-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.competency-card {
+  background: linear-gradient(135deg, rgba(168, 85, 247, 0.05) 0%, rgba(59, 130, 246, 0.05) 100%);
+  border: 1px solid rgba(168, 85, 247, 0.2);
+  padding: 2.5rem 2rem;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.competency-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(168, 85, 247, 0.4);
+  background: linear-gradient(135deg, rgba(168, 85, 247, 0.1) 0%, rgba(59, 130, 246, 0.1) 100%);
+  box-shadow: 0 15px 40px rgba(168, 85, 247, 0.15);
+}
+
+.competency-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.competency-card h3 {
+  font-size: 1.3rem;
+  color: #ffffff;
+  margin: 1rem 0;
+  font-weight: 600;
+}
+
+.competency-card p {
+  color: #b0b0c0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .core-competencies h2 {
+    font-size: 2rem;
+  }
+  
+  .competencies-grid {
+    grid-template-columns: 1fr;
+  }
+}

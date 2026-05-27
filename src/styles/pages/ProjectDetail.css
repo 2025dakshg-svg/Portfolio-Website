@@ -1,0 +1,335 @@
+/* Project Detail Page Styles */
+.project-detail-page {
+  background: linear-gradient(135deg, #0a0e27 0%, #1a1f3a 100%);
+  min-height: 100vh;
+  padding: 4rem 2rem;
+}
+
+.detail-header {
+  max-width: 1000px;
+  margin: 0 auto 4rem;
+}
+
+.detail-header-top {
+  color: #a855f7;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.detail-header h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.2;
+  margin: 0 0 1.5rem 0;
+}
+
+.detail-description {
+  font-size: 1.1rem;
+  color: #b0b0c0;
+  line-height: 1.8;
+  margin: 0 0 2rem 0;
+}
+
+.detail-tags {
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+}
+
+.tag {
+  background: rgba(168, 85, 247, 0.15);
+  color: #a855f7;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Detail Image */
+.detail-image {
+  max-width: 1000px;
+  margin: 0 auto 4rem;
+  height: 400px;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(168, 85, 247, 0.2);
+}
+
+.image-placeholder {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #1a1f3a 0%, #0f1629 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  color: rgba(168, 85, 247, 0.3);
+  position: relative;
+}
+
+.image-placeholder::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: 
+    repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 10px,
+      rgba(168, 85, 247, 0.05) 10px,
+      rgba(168, 85, 247, 0.05) 20px
+    );
+}
+
+.image-placeholder.robot::after {
+  content: '🤖';
+  position: relative;
+  z-index: 1;
+}
+
+.image-placeholder.code::after {
+  content: '</>';
+  position: relative;
+  z-index: 1;
+}
+
+/* Challenge Section */
+.challenge-section,
+.architecture-section,
+.stats-section,
+.code-section {
+  max-width: 1000px;
+  margin: 0 auto 4rem;
+}
+
+.challenge-section h2,
+.architecture-section h2,
+.stats-section h2,
+.code-section h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 2.5rem 0;
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+.challenge-section h2::after,
+.architecture-section h2::after,
+.stats-section h2::after,
+.code-section h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, #a855f7 0%, #3b82f6 100%);
+}
+
+.challenge-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.challenge-item {
+  display: flex;
+  gap: 1.5rem;
+  background: linear-gradient(135deg, rgba(168, 85, 247, 0.05) 0%, rgba(59, 130, 246, 0.05) 100%);
+  border: 1px solid rgba(168, 85, 247, 0.2);
+  padding: 2rem;
+  border-radius: 12px;
+}
+
+.challenge-icon {
+  font-size: 2rem;
+  flex-shrink: 0;
+  margin-top: 0.5rem;
+}
+
+.challenge-item h4 {
+  font-size: 1.1rem;
+  color: #ffffff;
+  margin: 0 0 0.5rem 0;
+  font-weight: 600;
+}
+
+.challenge-item p {
+  color: #b0b0c0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Architecture Grid */
+.architecture-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.arch-card {
+  background: linear-gradient(135deg, rgba(168, 85, 247, 0.05) 0%, rgba(59, 130, 246, 0.05) 100%);
+  border: 1px solid rgba(168, 85, 247, 0.2);
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.arch-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(168, 85, 247, 0.4);
+}
+
+.arch-icon {
+  font-size: 2.5rem;
+  color: #a855f7;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.arch-card h3 {
+  font-size: 1.1rem;
+  color: #ffffff;
+  margin: 0 0 0.8rem 0;
+  font-weight: 600;
+}
+
+.arch-card p {
+  color: #b0b0c0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Stats Grid */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.stat-card {
+  background: linear-gradient(135deg, rgba(168, 85, 247, 0.1) 0%, rgba(59, 130, 246, 0.1) 100%);
+  border: 1px solid rgba(168, 85, 247, 0.3);
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.stat-label {
+  color: #a855f7;
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.stat-value {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+.stat-unit {
+  color: #7c7c8c;
+  font-size: 0.9rem;
+}
+
+.chart-description {
+  color: #b0b0c0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Code Section */
+.code-block {
+  background: #0a0e27;
+  border: 1px solid rgba(168, 85, 247, 0.2);
+  border-radius: 8px;
+  padding: 2rem;
+  overflow-x: auto;
+  color: #a855f7;
+  font-family: 'Courier New', monospace;
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+
+.code-block code {
+  display: block;
+}
+
+/* Detail Footer */
+.detail-footer {
+  max-width: 1000px;
+  margin: 0 auto 4rem;
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.btn-view-full,
+.btn-case-study {
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.btn-view-full {
+  background: transparent;
+  color: #ffffff;
+  border: 1px solid #b0b0c0;
+}
+
+.btn-view-full:hover {
+  border-color: #a855f7;
+  color: #a855f7;
+}
+
+.btn-case-study {
+  background: linear-gradient(135deg, #a855f7 0%, #3b82f6 100%);
+  color: white;
+}
+
+.btn-case-study:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(168, 85, 247, 0.3);
+}
+
+@media (max-width: 768px) {
+  .detail-header h1 {
+    font-size: 2.5rem;
+  }
+
+  .challenge-items,
+  .architecture-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .detail-image {
+    height: 250px;
+  }
+
+  .detail-footer {
+    flex-direction: column;
+  }
+}
