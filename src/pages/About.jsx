@@ -18,26 +18,6 @@ const About = () => {
             <p className="status">● {personal.status}</p>
           </div>
         </div>
-
-        <div className="bio-sidebar">
-          <nav className="sidebar-nav">
-            <a href="#dashboard" className="nav-item">
-              <span>📊</span> Dashboard
-            </a>
-            <a href="#projects" className="nav-item active">
-              <span>📁</span> Projects
-            </a>
-            <a href="#bio" className="nav-item">
-              <span>📋</span> Bio
-            </a>
-            <a href="#contact" className="nav-item">
-              <span>✉️</span> Contact
-            </a>
-            <a href="#logs" className="nav-item">
-              <span>📝</span> Logs
-            </a>
-          </nav>
-        </div>
       </div>
 
       <div className="bio-content">

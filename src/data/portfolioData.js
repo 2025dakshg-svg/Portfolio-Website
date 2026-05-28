@@ -92,82 +92,119 @@ export const portfolioData = {
   projects: [
     {
       id: 1,
-      title: 'Synapse_Engine',
-      category: 'ARTIFICIAL_INTELLIGENCE',
-      description: 'Building a low-latency neural orchestration layer for real-time edge processing. This engine powers autonomous agents with sub-50ms inference feedback loops.',
-      fullDescription: 'A sophisticated ML orchestration system designed for real-time processing with minimal latency. Built to handle high-throughput inference requests while maintaining accuracy.',
-      tags: ['ML', 'Python', 'TensorFlow', 'Real-time Processing'],
+      title: 'DAMS Aerospace',
+      category: 'WEB_DEVELOPMENT',
+      description: 'A fully responsive aerospace company website featuring stunning hero animations, launch booking system, mission showcases, and a modern e-commerce shop — built with pure HTML, CSS & JavaScript.',
+      fullDescription: 'DAMS Aerospace is a complete aerospace company website built from scratch using HTML, CSS, and JavaScript. It features immersive hero sections with video backgrounds, a launch booking system, mission pages, career portal, technology showcases, and an integrated shop — all with smooth animations and responsive design.',
+      tags: ['HTML', 'CSS', 'JavaScript', 'Responsive Design'],
+      imageUrl: '/downloads/dams-aerospace.png',
       featured: true,
       caseStudy: true,
+      liveUrl: 'https://shankara11y.github.io/DAMS-Aerospace-Website/',
       stats: {
-        performance: '312%',
-        latency: '18ms',
-        uptime: '99.99%',
-        accuracy: '96.8%'
+        pages: '7+',
+        animations: '20+',
+        responsive: '100%',
+        performance: '95%'
       },
-      techStack: ['Python', 'TensorFlow', 'FastAPI', 'Redis', 'Docker']
+      techStack: ['HTML5', 'CSS3', 'JavaScript', 'Google Fonts', 'Responsive Design']
     },
     {
       id: 2,
-      title: 'Neural Text Summarizer',
-      category: 'NLP',
-      description: 'An advanced Transformer-based model optimized for extractive and abstractive summarization of complex technical documentation.',
-      fullDescription: 'Leveraging state-of-the-art transformer architectures to generate concise and accurate summaries from large technical documents.',
-      tags: ['NLP', 'Transformers', 'Python', 'BERT'],
+      title: 'Percentage Calculator',
+      category: 'PYTHON_DEVELOPMENT',
+      description: 'A suite of Python-based calculator programs, featuring a console-based percentage calculator and a basic arithmetic calculator with robust input and zero-division handling.',
+      fullDescription: 'This repository contains two simple Python calculator programs (SMALLCALCULATOR.py and PERCENTAGECALCULATOR.py) created to practice basic programming concepts such as functions, user input, conditional statements, and arithmetic operations.',
+      tags: ['Python', 'Mathematics', 'CLI', 'Algorithm'],
+      imageUrl: '/downloads/percentage-calculator.png',
       featured: true,
       caseStudy: true,
+      liveUrl: 'https://github.com/2025dakshg-svg/PERCENTAGE-CALCULATOR',
       stats: {
-        performance: '45%',
-        latency: '850ms',
-        uptime: '99.95%',
-        accuracy: '94.2%'
+        calculators: '2',
+        language: 'Python 3',
+        precision: 'High',
+        accuracy: '100%'
       },
-      techStack: ['Python', 'PyTorch', 'Transformers', 'NLTK', 'spaCy']
+      techStack: ['Python 3', 'Mathematics', 'CLI', 'Input Validation'],
+      codeSnippet: `# PERCENTAGECALCULATOR.py - Core Implementation
+def calculate_percentage(part, total):
+    """
+    Computes the percentage of a part relative to a total.
+    Handles division-by-zero errors gracefully.
+    """
+    try:
+        percentage = (part / total) * 100
+        return percentage
+    except ZeroDivisionError:
+        return "Error: Total cannot be zero."
+
+def main():
+    print("=== Python Percentage Calculator ===")
+    try:
+        part = float(input("Enter the part value: "))
+        total = float(input("Enter the total value: "))
+        
+        result = calculate_percentage(part, total)
+        if isinstance(result, str):
+            print(result)
+        else:
+            print(f"Result: {part} is {result:.2f}% of {total}")
+    except ValueError:
+        print("Error: Input must be a valid number.")
+
+if __name__ == '__main__':
+    main()`
     },
     {
       id: 3,
-      title: 'Autonomous Drone Navigation',
-      category: 'ROBOTICS',
-      description: 'Real-time obstacle avoidance and path planning using reinforcement learning and stereo vision depth estimation.',
-      fullDescription: 'A complete autonomous navigation system combining computer vision and reinforcement learning for intelligent drone pathfinding.',
-      tags: ['Robotics', 'CV', 'Reinforcement Learning', 'Python'],
+      title: 'Secondspin Website',
+      category: 'WEB_DEVELOPMENT',
+      description: 'A sleek and modern web application UI for a platform called secondspin.',
+      fullDescription: 'A modern web application built for the secondspin platform, featuring a dark mode UI with neon accents, perfect for digital records and upcycled products.',
+      imageUrl: '/downloads/secondspin.png',
+      tags: ['Web Development', 'UI/UX', 'JavaScript', 'HTML/CSS'],
       featured: true,
-      caseStudy: true,
+      caseStudy: false,
       stats: {
-        performance: '89%',
-        latency: '50ms',
-        uptime: '99.9%',
-        accuracy: '97.5%'
+        performance: '99%',
+        accessibility: '100%',
+        seo: '100%',
+        bestPractices: '100%'
       },
-      techStack: ['Python', 'OpenCV', 'PyTorch', 'ROS', 'C++']
+      techStack: ['React', 'JavaScript', 'HTML5', 'CSS3']
     },
     {
       id: 4,
-      title: 'Sentiment Analysis Engine',
-      category: 'NLP_ML',
-      description: 'A multi-modal sentiment engine that analyzes text, tone, and facial expressions to deliver nuanced emotional intelligence.',
-      tags: ['ML', 'NLP', 'Computer Vision'],
+      title: 'Habit Tracker',
+      category: 'PRODUCTIVITY',
+      description: 'A customized, dynamic habit tracker built entirely within Google Sheets using advanced formulas.',
+      fullDescription: 'A modern, dynamic habit tracker created with Google Sheets. It tracks daily progress, calculates statistics, and visualizes data using conditional formatting and advanced spreadsheet functions.',
+      imageUrl: '/downloads/habit_tracker.png',
+      tags: ['Google Sheets', 'Productivity', 'Data Visualization'],
       featured: false,
+      caseStudy: false,
       stats: {
-        accuracy: '92.1%',
-        latency: '120ms',
-        uptime: '99.88%'
+        efficiency: 'High',
+        usability: '100%',
+        automation: 'Yes'
       },
-      techStack: ['Python', 'TensorFlow', 'OpenCV', 'Librosa']
+      techStack: ['Google Sheets', 'Formulas', 'Conditional Formatting']
     },
     {
       id: 5,
-      title: 'QUANTUM_COMPU',
-      category: 'INFRASTRUCTURE',
-      description: 'A distributed management system for hybrid classical-quantum workloads, ensuring optimal qubit allocation and error correction.',
-      tags: ['Infrastructure', 'Quantum', 'Distributed Systems'],
+      title: 'React Mini Project (Unit Converter)',
+      category: 'WEB_DEVELOPMENT',
+      description: 'A React-based utility application for converting units like Celsius to Fahrenheit and many more.',
+      imageUrl: '/downloads/unit_converter.png',
+      tags: ['React', 'JavaScript', 'Frontend', 'Utility'],
       featured: false,
       stats: {
-        accuracy: '99.99%',
-        latency: '2500ms',
+        accuracy: '100%',
+        latency: '10ms',
         uptime: '99.99%'
       },
-      techStack: ['Qiskit', 'Python', 'AWS', 'Kubernetes']
+      techStack: ['React', 'JavaScript', 'HTML5', 'CSS3']
     },
     {
       id: 6,

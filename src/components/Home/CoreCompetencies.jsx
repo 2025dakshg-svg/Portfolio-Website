@@ -4,19 +4,19 @@ import '../../styles/CoreCompetencies.css';
 const CoreCompetencies = () => {
   const competencies = [
     {
-      icon: '🧠',
-      title: 'AI & Machine Learning',
-      description: 'Transforming visions with Language Models',
+      icon: '',
+      title: 'Frontend Development',
+      description: 'React js , TypeScript, Tailwind CSS',
     },
     {
-      icon: '⚙️',
-      title: 'Large Language AI',
-      description: 'LLMs, GPTs',
+      icon: '',
+      title: 'Backend Development',
+      description: 'C++, Python, Node.js',
     },
     {
-      icon: '🎯',
-      title: 'Full-Stack Design',
-      description: 'React, Node.js',
+      icon: '',
+      title: 'DSA',
+      description: 'Data Structures and Algorithms',
     },
   ];
 

@@ -6,15 +6,17 @@ const SelectedWorks = () => {
   const works = [
     {
       id: 1,
-      title: 'Synapse_Engine',
-      description: 'Neural network model for advanced predictive analysis and real-time data processing',
-      tags: ['ML', 'Python'],
+      title: 'DAMS Aerospace',
+      description: 'A fully responsive aerospace company website with hero animations, launch booking system, and modern e-commerce shop — built with HTML, CSS & JavaScript.',
+      tags: ['HTML', 'CSS', 'JavaScript'],
+      imageUrl: '/downloads/dams-aerospace.png',
     },
     {
       id: 2,
-      title: 'Core_Optimizer',
-      description: 'Optimized runtime engine for high-throughput data processing and advanced sorting',
-      tags: ['C++', 'CUDA'],
+      title: 'Percentage Calculator',
+      description: 'A suite of Python-based calculator programs, featuring a console-based percentage calculator and a basic arithmetic calculator with robust input and zero-division handling.',
+      tags: ['Python', 'Mathematics', 'CLI'],
+      imageUrl: '/downloads/percentage-calculator.png',
     },
   ];
 
@@ -29,7 +31,11 @@ const SelectedWorks = () => {
       <div className="works-grid">
         {works.map((work) => (
           <div key={work.id} className="work-card">
-            <div className="work-placeholder"></div>
+            <div className="work-placeholder">
+              {work.imageUrl && (
+                <img src={work.imageUrl} alt={work.title} className="work-img" />
+              )}
+            </div>
             <div className="work-content">
               <h3>{work.title}</h3>
               <p>{work.description}</p>

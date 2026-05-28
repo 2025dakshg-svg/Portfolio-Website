@@ -84,111 +84,177 @@ export const portfolioData = {
   projects: [
     {
       id: 1,
-      title: 'Synapse_Engine',
-      category: 'ARTIFICIAL_INTELLIGENCE',
-      shortDescription: 'Building a low-latency neural orchestration layer for real-time edge processing.',
-      fullDescription: 'An advanced neural orchestration layer for real-time edge processing. This engine powers autonomous agents with sub-50ms inference feedback loops, enabling intelligent decision-making at the edge.',
-      image: 'robot',
-      tags: ['ML', 'Python', 'TensorFlow'],
+      title: 'DAMS Aerospace',
+      category: 'WEB_DEVELOPMENT',
+      shortDescription: 'A fully responsive aerospace company website with hero animations, launch booking, and shop.',
+      fullDescription: 'DAMS Aerospace is a complete aerospace company website built from scratch using HTML, CSS, and JavaScript. It features immersive hero sections with video backgrounds, a launch booking system, mission pages, career portal, technology showcases, and an integrated shop — all with smooth animations and responsive design.',
+      image: 'rocket',
+      tags: ['HTML', 'CSS', 'JavaScript'],
+      imageUrl: '/downloads/dams-aerospace.png',
       featured: true,
+      liveUrl: 'https://shankara11y.github.io/DAMS-Aerospace-Website/',
       stats: {
-        performance: '312%',
-        latency: '18ms',
-        accuracy: '99.99'
+        pages: '7+',
+        animations: '20+',
+        accuracy: '100'
       },
       challenge: [
         {
-          icon: '⚡',
-          title: 'Latency Bottlenecks',
-          description: 'Standard ML inference suffered from variable latency. Built elastic response for industrial robotics.'
+          icon: '🚀',
+          title: 'Immersive Hero Sections',
+          description: 'Built cinematic hero sections with video backgrounds and smooth scroll-triggered animations.'
         },
         {
-          icon: '🔧',
-          title: 'Hardware Constraints',
-          description: 'System needed to handle TPU acceleration across cloud and edge devices.'
+          icon: '🎨',
+          title: 'Pure CSS Animations',
+          description: 'Created complex animations and transitions using only vanilla CSS — no libraries needed.'
         },
         {
-          icon: '🔗',
-          title: 'Data Integrity',
-          description: 'Ensuring zero-loss message proof certification across distributed communications.'
+          icon: '📱',
+          title: 'Fully Responsive',
+          description: 'Ensured pixel-perfect responsiveness across all devices from mobile to ultra-wide displays.'
         }
       ],
       architecture: [
         {
-          icon: 'M',
-          name: 'Ingestion Layer',
-          description: 'Compressed stream processing using Redis backed data inflow'
+          icon: 'H',
+          name: 'HTML5 Structure',
+          description: 'Semantic HTML5 layout with accessible navigation and SEO-friendly markup'
         },
         {
           icon: 'C',
-          name: 'Core Neural Hub',
-          description: 'Adaptive neural orchestration orchestrated compute processing'
+          name: 'CSS3 Styling',
+          description: 'Modern CSS with flexbox, grid, animations, and custom properties'
         },
         {
-          icon: 'E',
-          name: 'Execution API',
-          description: 'Low-latency gRPC endpoints for fast request distribution'
+          icon: 'J',
+          name: 'JavaScript Logic',
+          description: 'Vanilla JS for interactivity, form handling, and dynamic content'
         }
       ]
     },
     {
       id: 2,
-      title: 'Neural Text Summarizer',
-      category: 'AI',
-      shortDescription: 'Advanced Transformer-based model for extractive and abstractive summarization.',
-      fullDescription: 'An advanced Transformer-based model optimized for extractive and abstractive summarization of complex technical documentation with 96% accuracy.',
+      title: 'Percentage Calculator',
+      category: 'PYTHON_DEVELOPMENT',
+      shortDescription: 'A suite of Python-based calculator programs, featuring percentage calculations and robust mathematical functions.',
+      fullDescription: 'This repository contains two simple Python calculator programs (SMALLCALCULATOR.py and PERCENTAGECALCULATOR.py) created to practice basic programming concepts such as functions, user input, conditional statements, and arithmetic operations.',
       image: 'code',
-      tags: ['AI', 'Python', 'Transformer'],
+      tags: ['Python', 'Mathematics', 'CLI', 'Algorithm'],
+      imageUrl: '/downloads/percentage-calculator.png',
       featured: true,
+      liveUrl: 'https://github.com/2025dakshg-svg/PERCENTAGE-CALCULATOR',
       stats: {
-        performance: '96%',
-        latency: '200ms',
-        accuracy: '96.2'
-      }
+        calculators: '2',
+        language: 'Python 3',
+        accuracy: '100'
+      },
+      challenge: [
+        {
+          icon: '🐍',
+          title: 'Procedural Logic',
+          description: 'Structuring clean arithmetic and percentage logic into reusable, standalone Python functions.'
+        },
+        {
+          icon: '➗',
+          title: 'Zero Division Guarding',
+          description: 'Implementing custom exception logic to handle and recover from division-by-zero math errors.'
+        },
+        {
+          icon: '⚡',
+          title: 'Input Robustness',
+          description: 'Gracefully validating user inputs to accept floats and integers without throwing runtime errors.'
+        }
+      ],
+      architecture: [
+        {
+          icon: 'I',
+          name: 'Input Handling',
+          description: 'Standard library inputs prompting user for specific arithmetic operation and numbers.'
+        },
+        {
+          icon: 'C',
+          name: 'Calculation logic',
+          description: 'Functional backend implementing logic for small-scale arithmetic and percentage scaling.'
+        },
+        {
+          icon: 'O',
+          name: 'Output UI',
+          description: 'Clean console formatting showing calculation steps and outputs to the terminal screen.'
+        }
+      ],
+      codeSnippet: `# PERCENTAGECALCULATOR.py - Core Implementation
+def calculate_percentage(part, total):
+    """
+    Computes the percentage of a part relative to a total.
+    Handles division-by-zero errors gracefully.
+    """
+    try:
+        percentage = (part / total) * 100
+        return percentage
+    except ZeroDivisionError:
+        return "Error: Total cannot be zero."
+
+def main():
+    print("=== Python Percentage Calculator ===")
+    try:
+        part = float(input("Enter the part value: "))
+        total = float(input("Enter the total value: "))
+        
+        result = calculate_percentage(part, total)
+        if isinstance(result, str):
+            print(result)
+        else:
+            print(f"Result: {part} is {result:.2f}% of {total}")
+    except ValueError:
+        print("Error: Input must be a valid number.")
+
+if __name__ == '__main__':
+    main()`
     },
     {
       id: 3,
-      title: 'Autonomous Drone Navigation',
-      category: 'Robotics',
-      shortDescription: 'Real-time obstacle avoidance using reinforcement learning and stereo vision.',
-      fullDescription: 'Real-time obstacle avoidance and path planning using reinforcement learning and stereo vision depth estimation for autonomous aerial vehicles.',
-      image: 'code',
-      tags: ['Robotics', 'Python', 'Computer Vision'],
+      title: 'Secondspin Website',
+      category: 'Web Development',
+      shortDescription: 'A sleek and modern web application UI for secondspin.',
+      fullDescription: 'A modern web application built for the secondspin platform, featuring a dark mode UI with neon accents, perfect for digital records and upcycled products.',
+      imageUrl: '/downloads/secondspin.png',
+      tags: ['Web Development', 'UI/UX', 'JavaScript', 'HTML/CSS'],
       featured: true,
       stats: {
-        performance: '95%',
-        latency: '50ms',
-        accuracy: '97.1'
+        performance: '99%',
+        accessibility: '100%',
+        seo: '100%'
       }
     },
     {
       id: 4,
-      title: 'Sentiment Analysis Engine',
-      category: 'ML_NLP',
-      shortDescription: 'Multi-modal sentiment engine analyzing text, tone, and facial expressions.',
-      fullDescription: 'A multi-modal sentiment engine that analyzes text, tone, and facial expressions to deliver nuanced emotional intelligence for real-world applications.',
-      image: 'code',
-      tags: ['ML', 'NLP', 'Computer Vision'],
+      title: 'Habit Tracker',
+      category: 'Productivity',
+      shortDescription: 'A dynamic habit tracker built in Google Sheets.',
+      fullDescription: 'A modern, dynamic habit tracker created with Google Sheets. It tracks daily progress, calculates statistics, and visualizes data using conditional formatting and advanced spreadsheet functions.',
+      imageUrl: '/downloads/habit_tracker.png',
+      tags: ['Google Sheets', 'Productivity', 'Data Visualization'],
       featured: false,
       stats: {
-        performance: '94%',
-        latency: '150ms',
-        accuracy: '94.5'
+        efficiency: 'High',
+        usability: '100%',
+        automation: 'Yes'
       }
     },
     {
       id: 5,
-      title: 'QUANTUM_COMPU',
-      category: 'Infrastructure',
-      shortDescription: 'Distributed management system for hybrid classical-quantum workloads.',
-      fullDescription: 'A distributed management system for hybrid classical-quantum workloads, ensuring optimal qubit allocation and error correction.',
-      image: 'code',
-      tags: ['Infrastructure', 'Quantum'],
+      title: 'React Mini Project (Unit Converter)',
+      category: 'Web Development',
+      shortDescription: 'A React-based utility application for converting units.',
+      fullDescription: 'A React-based utility application for converting units like Celsius to Fahrenheit and many more.',
+      imageUrl: '/downloads/unit_converter.png',
+      tags: ['React', 'JavaScript', 'Utility'],
       featured: false,
       stats: {
-        performance: '92%',
-        latency: '100ms',
-        accuracy: '98.5'
+        performance: '100%',
+        latency: '10ms',
+        accuracy: '100%'
       }
     },
     {

@@ -10,5 +10,5 @@ export const DOWNLOADS = {
     label: 'Download CV',
   },
 };
-
 export const DEPLOY_AI_URL = 'https://github.com/dakshghandat';
+

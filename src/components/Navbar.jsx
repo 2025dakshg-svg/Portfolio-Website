@@ -13,7 +13,7 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="navbar-container">
         <Link to="/" className="navbar-logo">
-          NEURAL_ARCHITECT
+          2025dakshg-svg
         </Link>
         <ul className="nav-menu">
           <li>

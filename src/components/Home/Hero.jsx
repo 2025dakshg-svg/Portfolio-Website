@@ -29,7 +29,6 @@ const Hero = () => {
         />
       </div>
       <div className="hero-content">
-        <p className="system-init">SYSTEM INITIALIZATION</p>
         <h1 className="hero-title">Daksh Ghandat</h1>
         <h2 className="hero-subtitle">Aspiring AI Engineer</h2>
         <p className="hero-description">

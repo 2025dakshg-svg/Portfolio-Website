@@ -5,7 +5,6 @@ import {
   CoreCompetencies,
   SelectedWorks,
   ChronologicalSequence,
-  DeployAI,
 } from '../components/Home';
 import '../styles/pages/Home.css';
 
@@ -17,7 +16,6 @@ const Home = () => {
       <CoreCompetencies />
       <SelectedWorks />
       <ChronologicalSequence />
-      <DeployAI />
     </div>
   );
 };

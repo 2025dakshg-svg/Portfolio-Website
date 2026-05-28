@@ -11,13 +11,10 @@
 }
 
 .bio-header {
-  display: grid;
-  grid-template-columns: 1fr 250px;
-  gap: 2rem;
+  display: block;
   padding: 4rem 2rem;
   max-width: 1400px;
   margin: 0 auto;
-  align-items: flex-start;
 }
 
 .profile-section {

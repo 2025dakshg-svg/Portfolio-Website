@@ -76,7 +76,11 @@ const ProjectDetail = () => {
       </div>
 
       <div className="detail-image">
-        <div className="image-placeholder robot"></div>
+        <div className={`image-placeholder ${project.image || ''}`}>
+          {project.imageUrl && (
+            <img src={project.imageUrl} alt={project.title} className="detail-img" />
+          )}
+        </div>
       </div>
 
       <div className="challenge-section">
@@ -123,50 +127,7 @@ const ProjectDetail = () => {
         </p>
       </div>
 
-      <div className="tech-section">
-        <h2>Technology Stack</h2>
-        <div className="tech-list">
-          {project.techStack &&
-            project.techStack.map((tech, idx) => (
-              <span key={idx} className="tech-item">
-                {tech}
-              </span>
-            ))}
-        </div>
-      </div>
 
-      <div className="code-section">
-        <h2>Implementation Reference</h2>
-        <pre className="code-block">
-          <code>{`// ${project.title} - Core Implementation
-import { Pipeline } from './pipeline';
-import { Processor } from './processor';
-
-export class ${project.title.replace(/[_\s]/g, '')} {
-  private pipeline: Pipeline;
-  private processor: Processor;
-
-  constructor() {
-    this.pipeline = new Pipeline();
-    this.processor = new Processor();
-  }
-
-  async process(input: any[]): Promise<any> {
-    const processed = await this.pipeline.run(input);
-    return this.processor.compute(processed);
-  }
-}`}</code>
-        </pre>
-      </div>
-
-      <div className="detail-footer">
-        <button type="button" className="btn-view-full">
-          VIEW FULL CODE
-        </button>
-        <button type="button" className="btn-case-study">
-          CASE STUDY PDF
-        </button>
-      </div>
     </div>
   );
 };
