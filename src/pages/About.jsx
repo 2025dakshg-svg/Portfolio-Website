@@ -12,7 +12,7 @@ const About = () => {
     <div className="bio-page">
       <div className="bio-header">
         <div className="profile-section">
-          <div className="profile-image"></div>
+          <div className="profile-image"> </div>
           <div className="profile-info">
             <h1>{personal.name}</h1>
             <p className="status">● {personal.status}</p>
@@ -60,11 +60,7 @@ const About = () => {
                   <span className="edu-year">{item.year}</span>
                   <h3>{item.title}</h3>
                   <p>{item.description}</p>
-                  <div
-                    className={`edu-image ${
-                      item.focus?.[0]?.toLowerCase().replace(/\s+/g, '-') ?? 'default'
-                    }`}
-                  ></div>
+                 
                 </div>
               </div>
             ))}

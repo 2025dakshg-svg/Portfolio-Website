@@ -58,7 +58,7 @@ const ProjectDetail = () => {
     <div className="project-detail-page">
       <div className="detail-header">
         <div className="detail-header-top">
-          <span className="category-label">ARCHITECTURE_ARCHIVE_2024</span>
+          <span className="category-label"></span>
         </div>
 
         <h1>{project.title}</h1>

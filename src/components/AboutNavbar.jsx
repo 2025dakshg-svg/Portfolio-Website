@@ -13,7 +13,7 @@ const AboutNavbar = () => {
     <nav className="navbar navbar-about">
       <div className="navbar-container">
         <Link to="/" className="navbar-logo">
-          NEURAL_ARCHITECT
+          2025DAKSHG-SVG
         </Link>
         <ul className="nav-menu">
           <li>

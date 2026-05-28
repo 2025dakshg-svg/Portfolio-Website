@@ -20,74 +20,89 @@ export const portfolioData = {
   },
 
   expertise: [
-    {
-      icon: '🧠',
-      title: 'AI / ML Synthesis',
-      description: 'Implementing neural networks, building ML architectures and predictive models to solve complex neuralistic challenges.',
-      skills: ['TensorFlow', 'PyTorch', 'Scikit-learn']
-    },
-    {
-      icon: '⚙️',
-      title: 'Systems Engineering',
-      description: 'Crafting high-performance backends with C++ and Python, focusing on algorithmic efficiency and scalability.',
-      skills: ['C++', 'Python', 'Go']
-    },
-    {
-      icon: '🎨',
-      title: 'Interface Architecture',
-      description: 'Designing modern, reactive user experiences using React and the principles of atomic design.',
-      skills: ['React', 'TypeScript', 'Tailwind CSS']
-    }
-  ],
+  {
+    icon: '💻',
+    title: 'Frontend Development',
+    description: 'Building modern and responsive web applications using React.js and focusing on clean UI/UX and component-based architecture.',
+    skills: ['React.js', 'JavaScript', 'HTML', 'CSS', 'Tailwind CSS']
+  },
+  {
+    icon: '⚙️',
+    title: 'Programming & Problem Solving',
+    description: 'Developing strong programming fundamentals using C++ and Python with a focus on logic building and problem-solving.',
+    skills: ['C++', 'Python', 'Problem Solving']
+  },
+  {
+    icon: '🧠',
+    title: 'AI Learning & Exploration',
+    description: 'Exploring core concepts of Artificial Intelligence and Machine Learning while building a foundation for advanced AI development.',
+    skills: ['AI Basics', 'Machine Learning Basics']
+  }
+],
 
   experience: [
     {
       id: 1,
-      period: '2024 - Present',
-      title: 'Student AI Engineer',
-      company: 'ITM Skill University',
+      period: '2024 — The Beginning',
+      title: 'Started My Tech Journey',
+      company: 'Self Started',
       location: 'India',
-      description: 'Deep diving into neural network architectures, autonomous systems, and advanced AI specialization. Building end-to-end AI solutions and contributing to open-source ML projects.',
+      description: 'Began my journey with zero prior knowledge while studying in 12th grade. Explored basic computer concepts, programming fundamentals, and built curiosity for technology and AI.',
       achievements: [
-        'Implemented state-of-the-art transformer models for NLP tasks',
-        'Built autonomous systems with reinforcement learning',
-        'Contributed to multiple open-source AI projects',
-        'Achieved 96.8% accuracy on multi-modal sensor inputs'
+        
       ],
-      skills: ['Python', 'TensorFlow', 'PyTorch', 'NLP', 'Computer Vision']
     },
     {
       id: 2,
-      period: '2023 - 2024',
-      title: 'Foundations of Computation',
+      period: '2025 — Academic & Technical Journey',
+      title: 'Started Journey at ITM Skills University',
       company: 'ITM Skill University',
       location: 'India',
-      description: 'Mastering algorithmic complexity, data structures, and the core principles of software engineering.',
+      description: 'Began my professional journey at ITM Skills University with foundational knowledge in Python and C++. Strengthened programming skills, explored problem-solving techniques, and started building real-world development understanding.',
       achievements: [
-        'Completed advanced algorithms course with distinction',
-        'Built compiler architecture project',
-        'Mastered data structure implementation'
+        
       ],
-      skills: ['Data Structures', 'Algorithms', 'C++', 'Python', 'System Design']
+    },
+    {
+      id: 3,
+      period: '2026 — Growth & Development',
+      title: 'B.Tech Journey & Frontend Development',
+      company: 'ITM Skill University',
+      location: 'India',
+      description: 'Currently pursuing my first year of B.Tech while continuously improving my development skills. Gained strong experience in React.js and modern web technologies, building interactive and responsive applications. Actively expanding my knowledge in AI and software development.',
+      achievements: [
+        'Python',
+        'React.js',
+        'Modern Web Technologies',
+        'DSA using cpp'
+        
+      ],
     }
   ],
 
-  education: [
-    {
-      year: 'Present — 2024',
-      title: 'Advanced AI Specialization',
-      institution: 'ITM Skill University',
-      description: 'Deep diving into neural network architectures and autonomous system design at ITM Skill University.',
-      focus: ['Neural Networks', 'Autonomous Systems', 'Advanced AI']
-    },
-    {
-      year: '2023 — 2024',
-      title: 'Foundations of Computation',
-      institution: 'ITM Skill University',
-      description: 'Mastering algorithmic complexity, data structures, and the core principles of software engineering.',
-      focus: ['Algorithms', 'Data Structures', 'System Design']
-    }
-  ],
+education: [
+  {
+    year: '2026 — Present',
+    title: 'B.Tech (First Year) — AI & Development Journey',
+    institution: 'ITM Skills University',
+    description: 'Currently pursuing B.Tech while building strong skills in React.js and modern web development. Actively working on real-world projects and exploring AI concepts.',
+    focus: ['React.js', 'Web Development', 'AI Basics', 'Projects']
+  },
+  {
+    year: '2025 — 2026',
+    title: 'Programming Foundations',
+    institution: 'ITM Skills University',
+    description: 'Started my journey at ITM Skills University, building a strong foundation in Python and C++. Focused on problem-solving and core programming concepts.',
+    focus: ['Python', 'C++', 'Problem Solving', 'Programming Fundamentals']
+  },
+  {
+    year: '2024',
+    title: 'Beginning of Tech Journey',
+    institution: 'Self Learning',
+    description: 'Started from zero knowledge during 12th grade. Explored basic computer science concepts and developed interest in programming and AI.',
+    focus: ['Computer Basics', 'Introduction to Programming', 'Learning Mindset']
+  }
+],
 
   projects: [
     {
@@ -206,96 +221,75 @@ if __name__ == '__main__':
       },
       techStack: ['React', 'JavaScript', 'HTML5', 'CSS3']
     },
-    {
-      id: 6,
-      title: 'Globa_Lingo API',
-      category: 'API',
-      description: 'Ultra-low latency translation API supporting 140+ dialects with context-aware semantic mapping.',
-      tags: ['API', 'NLP', 'Backend'],
-      featured: false,
-      stats: {
-        languages: '140+',
-        latency: '85ms',
-        uptime: '99.99%'
-      },
-      techStack: ['Node.js', 'Python', 'Google Translate API', 'MongoDB']
-    }
+  
   ],
 
   research: [
-    {
-      id: 1,
-      title: 'Bridging Theoretical AI and Production-Ready Systems',
-      year: 2024,
-      category: 'AI Architecture',
-      description: 'Research focusing on bridging the gap between theoretical AI models and production-ready systems that solve real-world problems at scale.',
-      abstract: 'This research explores methodologies for deploying complex AI models in production environments while maintaining performance and reliability.',
-      status: 'In Progress',
-      tags: ['AI', 'ML Ops', 'System Design']
-    },
-    {
-      id: 2,
-      title: 'Neural Architecture Search for Edge Devices',
-      year: 2024,
-      category: 'Neural Networks',
-      description: 'Automated discovery of optimal neural network architectures for resource-constrained edge computing environments.',
-      abstract: 'NAS techniques adapted for edge deployment scenarios where computational resources are limited.',
-      status: 'In Progress',
-      tags: ['NAS', 'Edge Computing', 'AutoML']
-    },
-    {
-      id: 3,
-      title: 'Multi-Modal Fusion for Autonomous Systems',
-      year: 2023,
-      category: 'Computer Vision',
-      description: 'Advanced fusion techniques for combining visual, audio, and sensor data in autonomous system decision-making.',
-      abstract: 'Novel approaches to sensor fusion for improved situational awareness in autonomous agents.',
-      status: 'Completed',
-      tags: ['Computer Vision', 'Sensor Fusion', 'Robotics']
-    }
-  ],
+  {
+    id: 1,
+    title: 'Exploring AI Fundamentals and Real-World Applications',
+    year: 2026,
+    category: 'Artificial Intelligence',
+    description: 'Currently exploring core AI concepts and understanding how machine learning models are applied in real-world scenarios.',
+    abstract: 'Focused on learning the fundamentals of AI, including basic model understanding, workflows, and practical implementation approaches.',
+    status: 'In Progress',
+    tags: ['AI Basics', 'Machine Learning', 'Learning']
+  },
+  {
+    id: 2,
+    title: 'Frontend Development with React.js',
+    year: 2026,
+    category: 'Web Development',
+    description: 'Building modern and responsive web applications using React.js and improving UI/UX design skills.',
+    abstract: 'Hands-on development of projects focusing on component-based architecture and interactive user interfaces.',
+    status: 'In Progress',
+    tags: ['React.js', 'JavaScript', 'UI/UX']
+  },
+  {
+    id: 3,
+    title: 'Programming Foundations and Problem Solving',
+    year: 2025,
+    category: 'Programming',
+    description: 'Focused on building strong programming fundamentals using Python and C++ along with logical problem solving.',
+    abstract: 'Learning core concepts like variables, loops, functions, and basic data structures to strengthen coding skills.',
+    status: 'Completed',
+    tags: ['Python', 'C++', 'Problem Solving']
+  }
+], 
 
   techStack: [
-    {
-      name: 'Frontend',
-      icon: 'F',
-      items: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS']
-    },
-    {
-      name: 'Backend',
-      icon: 'B',
-      items: ['Node.js', 'Python', 'FastAPI', 'Flask']
-    },
-    {
-      name: 'ML/AI',
-      icon: 'M',
-      items: ['TensorFlow', 'PyTorch', 'Scikit-learn', 'OpenCV']
-    },
-    {
-      name: 'Database',
-      icon: 'D',
-      items: ['PostgreSQL', 'MongoDB', 'Redis', 'Vector DB']
-    },
-    {
-      name: 'DevOps',
-      icon: 'O',
-      items: ['Docker', 'Kubernetes', 'AWS', 'GitHub Actions']
-    },
-    {
-      name: 'Tools',
-      icon: 'T',
-      items: ['Git', 'VS Code', 'Jupyter', 'Figma']
-    }
-  ],
-
+  {
+    name: 'Frontend',
+    icon: 'F',
+    items: ['React.js', 'JavaScript', 'HTML', 'CSS', 'Tailwind CSS']
+  },
+  {
+    name: 'Backend',
+    icon: 'B',
+    items: ['Node.js (Basics)', 'Python']
+  },
+  {
+    name: 'Programming',
+    icon: 'P',
+    items: ['C++', 'Python', 'Problem Solving']
+  },
+  {
+    name: 'AI / Learning',
+    icon: 'M',
+    items: ['Machine Learning Basics', 'AI Concepts']
+  },
+  {
+    name: 'Tools',
+    icon: 'T',
+    items: ['Git', 'GitHub', 'VS Code']
+  }
+],
   philosophy: '"The architecture of code is the blueprint of our collective future. We don\'t just build software; we engineer the interfaces through which humanity will experience tomorrow."',
 
   stats: {
-    projects: '12+',
+    projects: '5+',
     research: '3',
-    publications: '2',
     uptime: '99.99',
     experience: '2+',
-    systems: '12+'
   }
 };
