@@ -4,7 +4,7 @@ import { portfolioData } from '../data/portfolioData';
 import '../styles/pages/Projects.css';
 
 const Projects = () => {
-  const { projects, stats } = portfolioData;
+  const { projects  } = portfolioData;
 
   return (
     <div className="projects-page">
